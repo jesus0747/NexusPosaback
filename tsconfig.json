@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": true,
+    "paths": {
+      "@nexus-pos/backend/*": ["./src/lib/*"],
+      "@workspace/db":        ["./src/db/index.ts"],
+      "@workspace/db/schema": ["./src/db/schema/index.ts"],
+      "@nexus-pos/event-schema": ["./src/event-schema/index.ts"],
+      "@workspace/api-zod":   ["./src/api-zod/index.ts"]
+    }
+  },
+  "include": ["src/**/*"]
+}
